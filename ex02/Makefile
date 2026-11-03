@@ -1,9 +1,9 @@
 CXX = c++
-CXX_FLAGS = -Wall -Wextra -Werror -std=c++98
+CXX_FLAGS = -g -Wall -Wextra -Werror -std=c++98
 SRCS = main.cpp
 OBJS_DIR = objs
 OBJS = $(patsubst %.cpp, $(OBJS_DIR)/%.o, $(SRCS))
-NAME = ex00
+NAME = ex02
 
 all: $(NAME)
 

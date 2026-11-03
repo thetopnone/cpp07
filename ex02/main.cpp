@@ -1,5 +1,7 @@
 #include <iostream>
-#include <Array.hpp>
+#include <cstdlib>
+#include <string>
+#include "Array.hpp"
 
 #define MAX_VAL 750
 int main(int, char**)
@@ -18,7 +20,19 @@ int main(int, char**)
         Array<int> tmp = numbers;
         Array<int> test(tmp);
     }
-
+    try
+    {
+        Array<std::string> empty;
+        Array<std::string> words(3);
+        std::cout << words[0];
+        words[2] = "Hello";
+        std::cout << words[2] << '\n';
+        empty = words;
+        std::cout << empty[0] << " and " << empty[2] << '\n';
+    }
+    catch(const std::exception& e){
+        std::cout << e.what() << '\n';
+    }
     for (int i = 0; i < MAX_VAL; i++)
     {
         if (mirror[i] != numbers[i])
