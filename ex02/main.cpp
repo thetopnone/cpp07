@@ -18,6 +18,7 @@ int main(int, char**)
 			numbers[i] = value;
 			mirror[i] = value;
 		}
+		std::cout << "Numbers array size: " << numbers.size() << std::endl;
 
 	//SCOPE
 		
@@ -80,19 +81,19 @@ int main(int, char**)
 		for (int i = 0; i < 5; ++i){
 			std::cout << original[i] << " ";
 		}
-		std::cout << "\n";
+		std::cout << "\nSize: " << original.size() << "\n";
 
 		std::cout << "Copy Constructed array:\n";
 		for (int i = 0; i < 5; ++i){
 			std::cout << ccopy[i] << " ";
 		}
-		std::cout << "\n";
+		std::cout << "\nSize: " << ccopy.size() << "\n";
 
 		std::cout << "Copy Assigned array:\n";
 		for (int i = 0; i < 5; ++i){
 			std::cout << acopy[i] << " ";
 		}
-		std::cout << "\n";
+		std::cout << "\nSize: " << acopy.size() << "\n";
 
 		std::cout << "\nINCREMENTING ORIGINAL ARRAY\n\n";
 		for (int i = 0; i < 5; ++i){
@@ -103,19 +104,19 @@ int main(int, char**)
 		for (int i = 0; i < 5; ++i){
 			std::cout << original[i] << " ";
 		}
-		std::cout << "\n";
+		std::cout << "\nSize: " << original.size() << "\n";
 
 		std::cout << "Copy Constructed array:\n";
 		for (int i = 0; i < 5; ++i){
 			std::cout << ccopy[i] << " ";
 		}
-		std::cout << "\n";
+		std::cout << "\nSize: " << ccopy.size() << "\n";
 
 		std::cout << "Copy Assigned array:\n";
 		for (int i = 0; i < 5; ++i){
 			std::cout << acopy[i] << " ";
 		}
-		std::cout << "\n";
+		std::cout << "\nSize: " << acopy.size() << "\n";
 
 		std::cout << "\nDECREMENTING COPY CONSTRUCTED ARRAY\n\n";
 		for (int i = 0; i < 5; ++i){
@@ -126,19 +127,19 @@ int main(int, char**)
 		for (int i = 0; i < 5; ++i){
 			std::cout << original[i] << " ";
 		}
-		std::cout << "\n";
+		std::cout << "\nSize: " << original.size() << "\n";
 
 		std::cout << "Updated Copy Constructed array:\n";
 		for (int i = 0; i < 5; ++i){
 			std::cout << ccopy[i] << " ";
 		}
-		std::cout << "\n";
+		std::cout << "\nSize: " << ccopy.size() << "\n";
 
 		std::cout << "Copy Assigned array:\n";
 		for (int i = 0; i < 5; ++i){
 			std::cout << acopy[i] << " ";
 		}
-		std::cout << "\n";
+		std::cout << "\nSize: " << acopy.size() << "\n";
 
 		std::cout << "\nCHANGING COPY ASSIGNED ARRAY\n\n";
 		for (int i = 0; i < 5; ++i){
@@ -149,19 +150,19 @@ int main(int, char**)
 		for (int i = 0; i < 5; ++i){
 			std::cout << original[i] << " ";
 		}
-		std::cout << "\n";
+		std::cout << "\nSize: " << original.size() << "\n";
 
 		std::cout << "Updated Copy Constructed array:\n";
 		for (int i = 0; i < 5; ++i){
 			std::cout << ccopy[i] << " ";
 		}
-		std::cout << "\n";
+		std::cout << "\nSize: " << ccopy.size() << "\n";
 
 		std::cout << "Updated Copy Assigned array:\n";
 		for (int i = 0; i < 5; ++i){
 			std::cout << acopy[i] << " ";
 		}
-		std::cout << "\n";
+		std::cout << "\nSize: " << acopy.size() << "\n";
 
 	}
 	return 0;
