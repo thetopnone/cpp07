@@ -6,26 +6,26 @@
 /*   By: akonstan <akonstan@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 15:35:48 by akonstan          #+#    #+#             */
-/*   Updated: 2026/11/03 17:23:27 by akonstan         ###   ########.fr       */
+/*   Updated: 2026/11/11 11:14:12 by akonstan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ARRAY_TPP
 # define ARRAY_TPP
 
-template<class T>
+template<typename T>
 Array<T>::Array()
 	:arr(new T[0])
 	,arr_size(0)
 {}
 
-template<class T>
+template<typename T>
 Array<T>::Array(unsigned int n)
 	:arr(new T[n])
 	,arr_size(n)
 {}
 
-template<class T>
+template<typename T>
 Array<T>::Array(const Array<T>& other)
 	:arr(new T[other.size()])
 	,arr_size(other.size())
@@ -35,7 +35,7 @@ Array<T>::Array(const Array<T>& other)
 	}
 }
 
-template<class T>
+template<typename T>
 Array<T>& Array<T>::operator=(const Array<T>& other){
 	if (this != &other){
 		int size = other.size();
@@ -50,26 +50,26 @@ Array<T>& Array<T>::operator=(const Array<T>& other){
 	return *this;
 }
 
-template<class T>
+template<typename T>
 Array<T>::~Array(){
 	delete[] this->arr;
 }
 
-template<class T>
+template<typename T>
 T& Array<T>::operator[](int idx){
 	if (idx < 0 || idx >= arr_size || arr_size == 0)
 		throw std::exception();
 	return this->arr[idx];
 }
 
-template<class T>
+template<typename T>
 const T& Array<T>::operator[](int idx) const{
 	if (idx < 0 || idx >= arr_size ||  arr_size == 0)
 		throw std::exception();
 	return this->arr[idx];
 }
 
-template<class T>
+template<typename T>
 int Array<T>::size() const{
 	return this->arr_size;
 }

@@ -6,14 +6,14 @@
 /*   By: akonstan <akonstan@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 15:04:04 by akonstan          #+#    #+#             */
-/*   Updated: 2026/11/03 16:24:53 by akonstan         ###   ########.fr       */
+/*   Updated: 2026/11/11 11:13:56 by akonstan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ARRAY_HPP
 # define ARRAY_HPP
 
-template<class T>
+template<typename T>
 class Array{
 	private:
 		T* arr;
@@ -31,5 +31,5 @@ class Array{
 		int size() const;
 };
 
-#include "Array.tpp"
+# include "Array.tpp"
 #endif
